@@ -1,0 +1,610 @@
+2023-06-14 19:07:50,095:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-14 19:07:50,096:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-14 19:07:50,096:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-14 19:07:50,096:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-14 19:07:58,005:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-06-14 19:08:00,873:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:08:00,884:INFO:PyCaret RegressionExperiment
+2023-06-14 19:08:00,885:INFO:Logging name: reg-default-name
+2023-06-14 19:08:00,885:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-06-14 19:08:00,885:INFO:version 3.0.2
+2023-06-14 19:08:00,885:INFO:Initializing setup()
+2023-06-14 19:08:00,885:INFO:self.USI: 69df
+2023-06-14 19:08:00,885:INFO:self._variable_keys: {'exp_id', 'pipeline', 'USI', 'target_param', 'gpu_param', 'memory', 'n_jobs_param', 'y', 'fold_generator', 'transform_target_param', 'X_test', 'y_test', 'logging_param', 'y_train', '_ml_usecase', 'X_train', 'exp_name_log', 'log_plots_param', 'html_param', 'seed', 'fold_groups_param', 'gpu_n_jobs_param', 'idx', 'fold_shuffle_param', 'data', '_available_plots', 'X'}
+2023-06-14 19:08:00,885:INFO:Checking environment
+2023-06-14 19:08:00,885:INFO:python_version: 3.9.16
+2023-06-14 19:08:00,885:INFO:python_build: ('main', 'May 15 2023 18:51:40')
+2023-06-14 19:08:00,885:INFO:machine: x86_64
+2023-06-14 19:08:00,914:INFO:platform: macOS-10.15.7-x86_64-i386-64bit
+2023-06-14 19:08:00,915:INFO:Memory: svmem(total=17179869184, available=7189008384, percent=58.2, used=9459662848, free=17747968, active=7173029888, inactive=7122800640, wired=2286632960)
+2023-06-14 19:08:00,915:INFO:Physical Core: 4
+2023-06-14 19:08:00,915:INFO:Logical Core: 8
+2023-06-14 19:08:00,915:INFO:Checking libraries
+2023-06-14 19:08:00,915:INFO:System:
+2023-06-14 19:08:00,915:INFO:    python: 3.9.16 (main, May 15 2023, 18:51:40)  [Clang 14.0.6 ]
+2023-06-14 19:08:00,915:INFO:executable: /Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/bin/python
+2023-06-14 19:08:00,915:INFO:   machine: macOS-10.15.7-x86_64-i386-64bit
+2023-06-14 19:08:00,915:INFO:PyCaret required dependencies:
+2023-06-14 19:08:00,916:INFO:                 pip: 23.1.2
+2023-06-14 19:08:00,916:INFO:          setuptools: 67.8.0
+2023-06-14 19:08:00,916:INFO:             pycaret: 3.0.2
+2023-06-14 19:08:00,916:INFO:             IPython: 8.14.0
+2023-06-14 19:08:00,916:INFO:          ipywidgets: 8.0.6
+2023-06-14 19:08:00,916:INFO:                tqdm: 4.65.0
+2023-06-14 19:08:00,916:INFO:               numpy: 1.23.5
+2023-06-14 19:08:00,916:INFO:              pandas: 1.5.3
+2023-06-14 19:08:00,917:INFO:              jinja2: 3.1.2
+2023-06-14 19:08:00,917:INFO:               scipy: 1.10.1
+2023-06-14 19:08:00,917:INFO:              joblib: 1.2.0
+2023-06-14 19:08:00,917:INFO:             sklearn: 1.2.2
+2023-06-14 19:08:00,917:INFO:                pyod: 1.0.9
+2023-06-14 19:08:00,917:INFO:            imblearn: 0.10.1
+2023-06-14 19:08:00,917:INFO:   category_encoders: 2.6.1
+2023-06-14 19:08:00,917:INFO:            lightgbm: 3.3.5
+2023-06-14 19:08:00,917:INFO:               numba: 0.57.0
+2023-06-14 19:08:00,917:INFO:            requests: 2.31.0
+2023-06-14 19:08:00,917:INFO:          matplotlib: 3.7.1
+2023-06-14 19:08:00,917:INFO:          scikitplot: 0.3.7
+2023-06-14 19:08:00,917:INFO:         yellowbrick: 1.5
+2023-06-14 19:08:00,917:INFO:              plotly: 5.15.0
+2023-06-14 19:08:00,917:INFO:             kaleido: 0.2.1
+2023-06-14 19:08:00,918:INFO:         statsmodels: 0.14.0
+2023-06-14 19:08:00,918:INFO:              sktime: 0.17.0
+2023-06-14 19:08:00,918:INFO:               tbats: 1.1.3
+2023-06-14 19:08:00,918:INFO:            pmdarima: 2.0.3
+2023-06-14 19:08:00,918:INFO:              psutil: 5.9.5
+2023-06-14 19:08:00,918:INFO:PyCaret optional dependencies:
+2023-06-14 19:08:00,941:INFO:                shap: Not installed
+2023-06-14 19:08:00,941:INFO:           interpret: Not installed
+2023-06-14 19:08:00,941:INFO:                umap: Not installed
+2023-06-14 19:08:00,941:INFO:    pandas_profiling: Not installed
+2023-06-14 19:08:00,941:INFO:  explainerdashboard: Not installed
+2023-06-14 19:08:00,941:INFO:             autoviz: Not installed
+2023-06-14 19:08:00,941:INFO:           fairlearn: Not installed
+2023-06-14 19:08:00,941:INFO:             xgboost: Not installed
+2023-06-14 19:08:00,941:INFO:            catboost: Not installed
+2023-06-14 19:08:00,942:INFO:              kmodes: Not installed
+2023-06-14 19:08:00,942:INFO:             mlxtend: Not installed
+2023-06-14 19:08:00,942:INFO:       statsforecast: Not installed
+2023-06-14 19:08:00,942:INFO:        tune_sklearn: Not installed
+2023-06-14 19:08:00,942:INFO:                 ray: Not installed
+2023-06-14 19:08:00,942:INFO:            hyperopt: Not installed
+2023-06-14 19:08:00,942:INFO:              optuna: Not installed
+2023-06-14 19:08:00,942:INFO:               skopt: Not installed
+2023-06-14 19:08:00,942:INFO:              mlflow: Not installed
+2023-06-14 19:08:00,943:INFO:              gradio: Not installed
+2023-06-14 19:08:00,943:INFO:             fastapi: Not installed
+2023-06-14 19:08:00,943:INFO:             uvicorn: Not installed
+2023-06-14 19:08:00,943:INFO:              m2cgen: Not installed
+2023-06-14 19:08:00,943:INFO:           evidently: Not installed
+2023-06-14 19:08:00,943:INFO:               fugue: Not installed
+2023-06-14 19:08:00,943:INFO:           streamlit: 1.23.1
+2023-06-14 19:08:00,943:INFO:             prophet: Not installed
+2023-06-14 19:08:00,943:INFO:None
+2023-06-14 19:08:00,944:INFO:Set up data.
+2023-06-14 19:08:00,974:INFO:Set up train/test split.
+2023-06-14 19:08:01,002:INFO:Set up index.
+2023-06-14 19:08:01,002:INFO:Set up folding strategy.
+2023-06-14 19:08:01,002:INFO:Assigning column types.
+2023-06-14 19:08:01,015:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-06-14 19:08:01,016:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-06-14 19:08:01,039:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-06-14 19:08:01,055:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-06-14 19:08:01,255:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-14 19:08:01,422:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-14 19:08:01,424:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-14 19:09:21,944:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-14 19:09:21,945:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-14 19:09:21,945:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-14 19:09:21,945:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-14 19:09:22,710:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-06-14 19:09:24,322:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:09:24,333:INFO:PyCaret RegressionExperiment
+2023-06-14 19:09:24,333:INFO:Logging name: reg-default-name
+2023-06-14 19:09:24,334:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-06-14 19:09:24,334:INFO:version 3.0.2
+2023-06-14 19:09:24,334:INFO:Initializing setup()
+2023-06-14 19:09:24,334:INFO:self.USI: 8864
+2023-06-14 19:09:24,334:INFO:self._variable_keys: {'fold_generator', 'logging_param', 'html_param', 'X_test', 'y_train', 'data', '_available_plots', 'y_test', 'fold_shuffle_param', 'memory', 'n_jobs_param', 'seed', 'gpu_param', 'transform_target_param', 'target_param', 'X', 'fold_groups_param', 'exp_id', 'X_train', 'pipeline', 'log_plots_param', 'idx', 'exp_name_log', 'gpu_n_jobs_param', 'USI', 'y', '_ml_usecase'}
+2023-06-14 19:09:24,334:INFO:Checking environment
+2023-06-14 19:09:24,334:INFO:python_version: 3.9.16
+2023-06-14 19:09:24,334:INFO:python_build: ('main', 'May 15 2023 18:51:40')
+2023-06-14 19:09:24,334:INFO:machine: x86_64
+2023-06-14 19:09:24,363:INFO:platform: macOS-10.15.7-x86_64-i386-64bit
+2023-06-14 19:09:24,364:INFO:Memory: svmem(total=17179869184, available=7133392896, percent=58.5, used=9514356736, free=17690624, active=7118618624, inactive=7042121728, wired=2395738112)
+2023-06-14 19:09:24,364:INFO:Physical Core: 4
+2023-06-14 19:09:24,364:INFO:Logical Core: 8
+2023-06-14 19:09:24,365:INFO:Checking libraries
+2023-06-14 19:09:24,365:INFO:System:
+2023-06-14 19:09:24,365:INFO:    python: 3.9.16 (main, May 15 2023, 18:51:40)  [Clang 14.0.6 ]
+2023-06-14 19:09:24,365:INFO:executable: /Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/bin/python
+2023-06-14 19:09:24,365:INFO:   machine: macOS-10.15.7-x86_64-i386-64bit
+2023-06-14 19:09:24,365:INFO:PyCaret required dependencies:
+2023-06-14 19:09:24,366:INFO:                 pip: 23.1.2
+2023-06-14 19:09:24,366:INFO:          setuptools: 67.8.0
+2023-06-14 19:09:24,366:INFO:             pycaret: 3.0.2
+2023-06-14 19:09:24,366:INFO:             IPython: 8.14.0
+2023-06-14 19:09:24,366:INFO:          ipywidgets: 8.0.6
+2023-06-14 19:09:24,367:INFO:                tqdm: 4.65.0
+2023-06-14 19:09:24,367:INFO:               numpy: 1.23.5
+2023-06-14 19:09:24,367:INFO:              pandas: 1.5.3
+2023-06-14 19:09:24,368:INFO:              jinja2: 3.1.2
+2023-06-14 19:09:24,368:INFO:               scipy: 1.10.1
+2023-06-14 19:09:24,368:INFO:              joblib: 1.2.0
+2023-06-14 19:09:24,368:INFO:             sklearn: 1.2.2
+2023-06-14 19:09:24,368:INFO:                pyod: 1.0.9
+2023-06-14 19:09:24,368:INFO:            imblearn: 0.10.1
+2023-06-14 19:09:24,369:INFO:   category_encoders: 2.6.1
+2023-06-14 19:09:24,369:INFO:            lightgbm: 3.3.5
+2023-06-14 19:09:24,369:INFO:               numba: 0.57.0
+2023-06-14 19:09:24,369:INFO:            requests: 2.31.0
+2023-06-14 19:09:24,369:INFO:          matplotlib: 3.7.1
+2023-06-14 19:09:24,369:INFO:          scikitplot: 0.3.7
+2023-06-14 19:09:24,369:INFO:         yellowbrick: 1.5
+2023-06-14 19:09:24,369:INFO:              plotly: 5.15.0
+2023-06-14 19:09:24,369:INFO:             kaleido: 0.2.1
+2023-06-14 19:09:24,369:INFO:         statsmodels: 0.14.0
+2023-06-14 19:09:24,370:INFO:              sktime: 0.17.0
+2023-06-14 19:09:24,370:INFO:               tbats: 1.1.3
+2023-06-14 19:09:24,370:INFO:            pmdarima: 2.0.3
+2023-06-14 19:09:24,370:INFO:              psutil: 5.9.5
+2023-06-14 19:09:24,370:INFO:PyCaret optional dependencies:
+2023-06-14 19:09:24,417:INFO:                shap: Not installed
+2023-06-14 19:09:24,418:INFO:           interpret: Not installed
+2023-06-14 19:09:24,418:INFO:                umap: Not installed
+2023-06-14 19:09:24,418:INFO:    pandas_profiling: Not installed
+2023-06-14 19:09:24,418:INFO:  explainerdashboard: Not installed
+2023-06-14 19:09:24,418:INFO:             autoviz: Not installed
+2023-06-14 19:09:24,418:INFO:           fairlearn: Not installed
+2023-06-14 19:09:24,418:INFO:             xgboost: Not installed
+2023-06-14 19:09:24,419:INFO:            catboost: Not installed
+2023-06-14 19:09:24,419:INFO:              kmodes: Not installed
+2023-06-14 19:09:24,419:INFO:             mlxtend: Not installed
+2023-06-14 19:09:24,419:INFO:       statsforecast: Not installed
+2023-06-14 19:09:24,419:INFO:        tune_sklearn: Not installed
+2023-06-14 19:09:24,419:INFO:                 ray: Not installed
+2023-06-14 19:09:24,419:INFO:            hyperopt: Not installed
+2023-06-14 19:09:24,419:INFO:              optuna: Not installed
+2023-06-14 19:09:24,419:INFO:               skopt: Not installed
+2023-06-14 19:09:24,419:INFO:              mlflow: Not installed
+2023-06-14 19:09:24,419:INFO:              gradio: Not installed
+2023-06-14 19:09:24,419:INFO:             fastapi: Not installed
+2023-06-14 19:09:24,420:INFO:             uvicorn: Not installed
+2023-06-14 19:09:24,420:INFO:              m2cgen: Not installed
+2023-06-14 19:09:24,420:INFO:           evidently: Not installed
+2023-06-14 19:09:24,420:INFO:               fugue: Not installed
+2023-06-14 19:09:24,420:INFO:           streamlit: 1.23.1
+2023-06-14 19:09:24,420:INFO:             prophet: Not installed
+2023-06-14 19:09:24,420:INFO:None
+2023-06-14 19:09:24,420:INFO:Set up data.
+2023-06-14 19:09:24,439:INFO:Set up train/test split.
+2023-06-14 19:09:24,450:INFO:Set up index.
+2023-06-14 19:09:24,450:INFO:Set up folding strategy.
+2023-06-14 19:09:24,451:INFO:Assigning column types.
+2023-06-14 19:09:24,457:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-06-14 19:09:24,458:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-06-14 19:09:24,471:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-06-14 19:09:24,485:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-06-14 19:09:24,661:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-14 19:09:24,813:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-14 19:09:24,815:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-14 19:10:25,892:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-14 19:10:25,892:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-14 19:10:25,892:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-14 19:10:25,892:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-14 19:10:26,657:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-06-14 19:10:28,161:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:11:17,583:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:12:06,671:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:12:36,685:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:13:01,128:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:13:16,568:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:13:24,278:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:13:51,844:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:14:00,542:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:16:30,065:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:16:30,073:INFO:Initializing load_model()
+2023-06-14 19:16:30,074:INFO:load_model(model_name=test_pipeline.pkl, platform=None, authentication=None, verbose=True)
+2023-06-14 19:16:49,284:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:16:49,291:INFO:Initializing load_model()
+2023-06-14 19:16:49,291:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:16:49,303:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:16:59,040:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:16:59,049:INFO:Initializing load_model()
+2023-06-14 19:16:59,049:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:16:59,058:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:17:31,805:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:17:31,812:INFO:Initializing load_model()
+2023-06-14 19:17:31,812:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:17:31,820:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:19:49,598:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:19:49,604:INFO:Initializing load_model()
+2023-06-14 19:19:49,605:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:19:49,615:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:22:06,812:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:22:06,821:INFO:Initializing load_model()
+2023-06-14 19:22:06,821:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:22:06,829:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:22:06,833:INFO:PyCaret RegressionExperiment
+2023-06-14 19:22:06,833:INFO:Logging name: reg-default-name
+2023-06-14 19:22:06,834:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-06-14 19:22:06,834:INFO:version 3.0.2
+2023-06-14 19:22:06,834:INFO:Initializing setup()
+2023-06-14 19:22:06,835:INFO:self.USI: 507e
+2023-06-14 19:22:06,835:INFO:self._variable_keys: {'target_param', 'y', 'exp_id', 'html_param', 'gpu_n_jobs_param', 'gpu_param', 'X_test', 'X', 'exp_name_log', 'idx', 'transform_target_param', 'logging_param', 'seed', 'X_train', 'n_jobs_param', '_available_plots', 'fold_generator', 'data', 'fold_groups_param', 'y_train', 'log_plots_param', 'memory', 'pipeline', 'USI', '_ml_usecase', 'fold_shuffle_param', 'y_test'}
+2023-06-14 19:22:06,836:INFO:Checking environment
+2023-06-14 19:22:06,836:INFO:python_version: 3.9.16
+2023-06-14 19:22:06,836:INFO:python_build: ('main', 'May 15 2023 18:51:40')
+2023-06-14 19:22:06,836:INFO:machine: x86_64
+2023-06-14 19:22:06,864:INFO:platform: macOS-10.15.7-x86_64-i386-64bit
+2023-06-14 19:22:06,865:INFO:Memory: svmem(total=17179869184, available=6671921152, percent=61.2, used=9454338048, free=150495232, active=6524801024, inactive=6477402112, wired=2929537024)
+2023-06-14 19:22:06,865:INFO:Physical Core: 4
+2023-06-14 19:22:06,865:INFO:Logical Core: 8
+2023-06-14 19:22:06,865:INFO:Checking libraries
+2023-06-14 19:22:06,865:INFO:System:
+2023-06-14 19:22:06,865:INFO:    python: 3.9.16 (main, May 15 2023, 18:51:40)  [Clang 14.0.6 ]
+2023-06-14 19:22:06,865:INFO:executable: /Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/bin/python
+2023-06-14 19:22:06,865:INFO:   machine: macOS-10.15.7-x86_64-i386-64bit
+2023-06-14 19:22:06,865:INFO:PyCaret required dependencies:
+2023-06-14 19:22:06,866:INFO:                 pip: 23.1.2
+2023-06-14 19:22:06,866:INFO:          setuptools: 67.8.0
+2023-06-14 19:22:06,866:INFO:             pycaret: 3.0.2
+2023-06-14 19:22:06,866:INFO:             IPython: 8.14.0
+2023-06-14 19:22:06,866:INFO:          ipywidgets: 8.0.6
+2023-06-14 19:22:06,866:INFO:                tqdm: 4.65.0
+2023-06-14 19:22:06,866:INFO:               numpy: 1.23.5
+2023-06-14 19:22:06,866:INFO:              pandas: 1.5.3
+2023-06-14 19:22:06,867:INFO:              jinja2: 3.1.2
+2023-06-14 19:22:06,867:INFO:               scipy: 1.10.1
+2023-06-14 19:22:06,867:INFO:              joblib: 1.2.0
+2023-06-14 19:22:06,867:INFO:             sklearn: 1.2.2
+2023-06-14 19:22:06,867:INFO:                pyod: 1.0.9
+2023-06-14 19:22:06,867:INFO:            imblearn: 0.10.1
+2023-06-14 19:22:06,867:INFO:   category_encoders: 2.6.1
+2023-06-14 19:22:06,867:INFO:            lightgbm: 3.3.5
+2023-06-14 19:22:06,867:INFO:               numba: 0.57.0
+2023-06-14 19:22:06,867:INFO:            requests: 2.31.0
+2023-06-14 19:22:06,867:INFO:          matplotlib: 3.7.1
+2023-06-14 19:22:06,868:INFO:          scikitplot: 0.3.7
+2023-06-14 19:22:06,868:INFO:         yellowbrick: 1.5
+2023-06-14 19:22:06,868:INFO:              plotly: 5.15.0
+2023-06-14 19:22:06,868:INFO:             kaleido: 0.2.1
+2023-06-14 19:22:06,868:INFO:         statsmodels: 0.14.0
+2023-06-14 19:22:06,868:INFO:              sktime: 0.17.0
+2023-06-14 19:22:06,868:INFO:               tbats: 1.1.3
+2023-06-14 19:22:06,868:INFO:            pmdarima: 2.0.3
+2023-06-14 19:22:06,868:INFO:              psutil: 5.9.5
+2023-06-14 19:22:06,868:INFO:PyCaret optional dependencies:
+2023-06-14 19:22:06,893:INFO:                shap: Not installed
+2023-06-14 19:22:06,893:INFO:           interpret: Not installed
+2023-06-14 19:22:06,893:INFO:                umap: Not installed
+2023-06-14 19:22:06,893:INFO:    pandas_profiling: Not installed
+2023-06-14 19:22:06,893:INFO:  explainerdashboard: Not installed
+2023-06-14 19:22:06,893:INFO:             autoviz: Not installed
+2023-06-14 19:22:06,893:INFO:           fairlearn: Not installed
+2023-06-14 19:22:06,893:INFO:             xgboost: Not installed
+2023-06-14 19:22:06,893:INFO:            catboost: Not installed
+2023-06-14 19:22:06,893:INFO:              kmodes: Not installed
+2023-06-14 19:22:06,893:INFO:             mlxtend: Not installed
+2023-06-14 19:22:06,893:INFO:       statsforecast: Not installed
+2023-06-14 19:22:06,893:INFO:        tune_sklearn: Not installed
+2023-06-14 19:22:06,894:INFO:                 ray: Not installed
+2023-06-14 19:22:06,894:INFO:            hyperopt: Not installed
+2023-06-14 19:22:06,894:INFO:              optuna: Not installed
+2023-06-14 19:22:06,894:INFO:               skopt: Not installed
+2023-06-14 19:22:06,894:INFO:              mlflow: Not installed
+2023-06-14 19:22:06,894:INFO:              gradio: Not installed
+2023-06-14 19:22:06,894:INFO:             fastapi: Not installed
+2023-06-14 19:22:06,894:INFO:             uvicorn: Not installed
+2023-06-14 19:22:06,894:INFO:              m2cgen: Not installed
+2023-06-14 19:22:06,894:INFO:           evidently: Not installed
+2023-06-14 19:22:06,894:INFO:               fugue: Not installed
+2023-06-14 19:22:06,894:INFO:           streamlit: 1.23.1
+2023-06-14 19:22:06,894:INFO:             prophet: Not installed
+2023-06-14 19:22:06,894:INFO:None
+2023-06-14 19:22:06,895:INFO:Set up data.
+2023-06-14 19:22:06,916:INFO:Set up train/test split.
+2023-06-14 19:22:06,927:INFO:Set up index.
+2023-06-14 19:22:06,928:INFO:Set up folding strategy.
+2023-06-14 19:22:06,929:INFO:Assigning column types.
+2023-06-14 19:22:06,936:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2023-06-14 19:22:06,936:INFO:Engine for model 'lasso' has not been set explicitly, hence returning None.
+2023-06-14 19:22:06,954:INFO:Engine for model 'ridge' has not been set explicitly, hence returning None.
+2023-06-14 19:22:06,971:INFO:Engine for model 'en' has not been set explicitly, hence returning None.
+2023-06-14 19:22:07,165:INFO:Engine for model 'svm' has not been set explicitly, hence returning None.
+2023-06-14 19:22:07,321:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2023-06-14 19:22:07,323:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2023-06-14 19:22:26,246:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:22:26,252:INFO:Initializing load_model()
+2023-06-14 19:22:26,252:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:22:26,261:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:25:43,260:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:25:43,267:INFO:Initializing load_model()
+2023-06-14 19:25:43,267:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:25:43,276:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:26:10,357:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:26:10,369:INFO:Initializing load_model()
+2023-06-14 19:26:10,369:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:26:10,378:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:26:23,085:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:26:23,095:INFO:Initializing load_model()
+2023-06-14 19:26:23,096:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:26:23,106:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:26:33,287:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:26:33,295:INFO:Initializing load_model()
+2023-06-14 19:26:33,295:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:26:33,305:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:30:14,004:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:30:29,024:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:30:29,037:INFO:Initializing load_model()
+2023-06-14 19:30:29,037:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:30:29,046:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:31:16,879:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:31:16,889:INFO:Initializing load_model()
+2023-06-14 19:31:16,889:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:31:16,896:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:33:40,261:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:33:40,277:INFO:Initializing load_model()
+2023-06-14 19:33:40,278:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:33:40,288:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:37:32,737:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:37:32,753:INFO:Initializing load_model()
+2023-06-14 19:37:32,753:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:37:32,763:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:43:37,559:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:43:37,586:INFO:Initializing load_model()
+2023-06-14 19:43:37,586:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:43:37,594:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:43:37,644:INFO:Initializing predict_model()
+2023-06-14 19:43:37,644:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fbf9f75e4c0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['ASTEROID_NUMBER', 'PHASE_ANGLE',
+                                             'ECLIPTIC_LONGITUDE',
+                                             'ECLIPTIC_LATITUDE', 'OCC_DIAM',
+                                             'IRAS_DIAM', 'IRAS_ALBEDO',
+                                             'POLAR_ALBEDO', 'OCC_ALBEDO',
+                                             'FOUR_DEG_MAGFOUR_DEG_ALBEDO',
+                                             'QUAL_MAG', 'QUAL_OCC'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 T...
+                                    transformer=OrdinalEncoder(cols=['OCC_ALB_FLAG'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'OCC_ALB_FLAG',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': B      0
+W      1
+NaN   -1
+dtype: int64}]))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['ASTEROID_NAME',
+                                             'OCCULTATION_TIME'],
+                                    transformer=TargetEncoder(cols=['ASTEROID_NAME',
+                                                                    'OCCULTATION_TIME'],
+                                                              handle_missing='return_nan'))),
+                ('trained_model', Ridge(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fbfa09c3670>)
+2023-06-14 19:43:37,644:INFO:Checking exceptions
+2023-06-14 19:43:37,644:INFO:Preloading libraries
+2023-06-14 19:43:37,644:INFO:Set up data.
+2023-06-14 19:43:37,654:INFO:Set up index.
+2023-06-14 19:46:37,605:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:46:37,639:INFO:Initializing load_model()
+2023-06-14 19:46:37,639:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:46:37,649:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:46:37,704:INFO:Initializing predict_model()
+2023-06-14 19:46:37,705:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fbf9f75e4c0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['ASTEROID_NUMBER', 'PHASE_ANGLE',
+                                             'ECLIPTIC_LONGITUDE',
+                                             'ECLIPTIC_LATITUDE', 'OCC_DIAM',
+                                             'IRAS_DIAM', 'IRAS_ALBEDO',
+                                             'POLAR_ALBEDO', 'OCC_ALBEDO',
+                                             'FOUR_DEG_MAGFOUR_DEG_ALBEDO',
+                                             'QUAL_MAG', 'QUAL_OCC'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 T...
+                                    transformer=OrdinalEncoder(cols=['OCC_ALB_FLAG'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'OCC_ALB_FLAG',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': B      0
+W      1
+NaN   -1
+dtype: int64}]))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['ASTEROID_NAME',
+                                             'OCCULTATION_TIME'],
+                                    transformer=TargetEncoder(cols=['ASTEROID_NAME',
+                                                                    'OCCULTATION_TIME'],
+                                                              handle_missing='return_nan'))),
+                ('trained_model', Ridge(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fbf89052ee0>)
+2023-06-14 19:46:37,705:INFO:Checking exceptions
+2023-06-14 19:46:37,706:INFO:Preloading libraries
+2023-06-14 19:46:37,706:INFO:Set up data.
+2023-06-14 19:46:37,719:INFO:Set up index.
+2023-06-14 19:49:39,447:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:51: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
+
+2023-06-14 19:49:39,475:INFO:Initializing load_model()
+2023-06-14 19:49:39,475:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 19:49:39,482:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 19:49:39,525:INFO:Initializing predict_model()
+2023-06-14 19:49:39,525:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fbf9f75e4c0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['ASTEROID_NUMBER', 'PHASE_ANGLE',
+                                             'ECLIPTIC_LONGITUDE',
+                                             'ECLIPTIC_LATITUDE', 'OCC_DIAM',
+                                             'IRAS_DIAM', 'IRAS_ALBEDO',
+                                             'POLAR_ALBEDO', 'OCC_ALBEDO',
+                                             'FOUR_DEG_MAGFOUR_DEG_ALBEDO',
+                                             'QUAL_MAG', 'QUAL_OCC'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 T...
+                                    transformer=OrdinalEncoder(cols=['OCC_ALB_FLAG'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'OCC_ALB_FLAG',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': B      0
+W      1
+NaN   -1
+dtype: int64}]))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['ASTEROID_NAME',
+                                             'OCCULTATION_TIME'],
+                                    transformer=TargetEncoder(cols=['ASTEROID_NAME',
+                                                                    'OCCULTATION_TIME'],
+                                                              handle_missing='return_nan'))),
+                ('trained_model', Ridge(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fbf89052e50>)
+2023-06-14 19:49:39,526:INFO:Checking exceptions
+2023-06-14 19:49:39,526:INFO:Preloading libraries
+2023-06-14 19:49:39,526:INFO:Set up data.
+2023-06-14 19:49:39,537:INFO:Set up index.
