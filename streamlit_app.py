@@ -11,10 +11,9 @@ from load_data import load_data
 """
 # Predizendo Albedo de Asteróides com IA
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
+Simples `/app` demonstrando as possiveis aplicações de IA na Astronomia :heart:
 
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
+Para maiores informações, confira [GitHub](https://docs.streamlit.io).
 
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
