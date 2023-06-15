@@ -30,7 +30,13 @@ columns_names = ["ASTEROID_NUMBER", "ASTEROID_NAME", "OCCULTATION_TIME",
 dataframe = pd.read_csv("data.csv", names=columns_names, delimiter=r"\s+", header=None, index_col=False)
 
 """
-## Exemplo de Valores no Database.
+## Amostra dos Dados Utilizados
+
+O conjunto de dados, a seguir, contém dados extraídos da pesquisa:
+
+["Shevchenko, V.G. and Tedesco, E.F., Asteroid Albedos from Stellar Occultations V1.0. EAR-A-VARGBDET-5-OCCALB-V1.0. NASA Planetary Data System, 2007."](https://sbn.psi.edu/pds-staging/resource/occalb.html?refUrl=https%3A%2F%2Fsbn.psi.edu%2Fpds-staging%2Farchive%2Fasteroids.html&refName=Asteroid&type=Target+Type&typeUrl=https%3A%2F%2Fsbn.psi.edu%2Fpds%2Farchive%2Ftarget-types.html)
+
+
 """
 
 st.table(dataframe.head())
@@ -39,6 +45,10 @@ st.image("pictures/slide_2.png", caption="Slide 2")
 
 """
 ## Módulos utilizados para criação do modelo
+
+[PyCaret](https://pycaret.gitbook.io/docs/) é uma biblioteca Python que simplifica o processo de desenvolvimento de modelos de aprendizado de máquina. 
+Ele fornece uma interface de alto nível, permitindo criar, comparar e avaliar rapidamente 
+diferentes algoritmos de aprendizado de máquina.
 """
 
 utilized_model_code = """import pycaret
@@ -49,6 +59,13 @@ st.code(utilized_model_code, language="python")
 
 """
 ## Transformando os dados e criando o modelo.
+
+A configuração do modelo de IA envolve coletar dados relevantes, pré-processá-los para 
+remover ruídos e lidar com valores ausentes, selecionar uma arquitetura ou algoritmo de 
+modelo apropriado, treinar o modelo usando os dados preparados e avaliar seu desempenho usando métricas 
+específicas para a tarefa. O modelo treinado é então ajustado por meio de ajustes de parâmetros, validado
+em dados não vistos e implantado em um ambiente de produção para fazer previsões sobre novos dados.
+O monitoramento contínuo e a manutenção do modelo garantem sua precisão e confiabilidade ao longo do tempo.
 """
 
 model_setup = """data_setup = setup(dataframe, target="H", session_id=123)"""
@@ -58,7 +75,14 @@ st.code(model_setup, language="python")
 st.image("pictures/model_info.png", caption="Informações do Modelo Criado")
 
 """
-## Selecionando o modelo mais adequado.
+## Selecionando o modelo mais adequado
+
+A seleção do modelo de IA é o processo de escolha do algoritmo ou arquitetura mais adequada para uma tarefa 
+específica. Envolve considerar fatores como o tipo de problema (classificação, regressão, agrupamento), características
+dos dados e métricas de desempenho desejadas. A seleção de modelos visa encontrar a melhor correspondência entre o problema
+em questão e as capacidades de diferentes algoritmos. Pode envolver a comparação e avaliação de vários modelos, considerando
+seus pontos fortes e fracos e selecionando aquele com maior probabilidade de obter previsões precisas e confiáveis. O modelo
+escolhido se torna a base para treinamento, avaliação e implantação do sistema de IA.
 """
 
 model_comparison = """models_comparison = compare_models()"""
@@ -71,12 +95,20 @@ code = """data_setup = setup(dataframe, target="H", session_id=123)
 models_comparison = compare_models()"""
 
 """
-## Análise do erro gerado pelo modelo.
+## Análise do erro gerado pelo modelo
+
+A análise de erro do modelo IA envolve o exame dos erros ou imprecisões cometidos pelo modelo 
+durante as previsões. Ele ajuda a identificar padrões, entender os tipos de erros cometidos e
+revelar insights no qual modelo pode estar com problemas. Essa análise fornece 
+feedback valioso para melhoria e refinamento do modelo.
 """
 
 st.image("pictures/residuals.png", caption="Análise dos resíduos gerados pelo modelo")
 st.image("pictures/error.png", caption="Análise dos erros gerados pelo modelo")
 
+"""
+## Selecionando amostra dos dados para teste
+"""
 
 sample_data = dataframe.drop(columns=["H"], axis=1).head()
 
@@ -85,10 +117,17 @@ sample_data = sample_data.assign(ASTEROID_NAME="sample")
 
 st.table(sample_data.head())
 
+"""
+## Importando o modelo treinado
+"""
+
 model = load_model("test_pipeline")
 
-predictions = predict_model(model, sample_data)
+"""
+## Predizendo os dados de teste
+"""
 
+predictions = predict_model(model, sample_data)
 st.table(predictions.head())
 
 st.image("pictures/slide_6.png", caption="Slide 6")

@@ -818,3 +818,381 @@ dtype: int64}]))),
 2023-06-14 20:08:50,722:INFO:Preloading libraries
 2023-06-14 20:08:50,722:INFO:Set up data.
 2023-06-14 20:08:50,737:INFO:Set up index.
+2023-06-14 20:48:04,915:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:30: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  
+
+2023-06-14 20:48:04,974:INFO:Initializing load_model()
+2023-06-14 20:48:04,974:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 20:48:04,991:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 20:48:05,049:INFO:Initializing predict_model()
+2023-06-14 20:48:05,049:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fbf9f75e4c0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['ASTEROID_NUMBER', 'PHASE_ANGLE',
+                                             'ECLIPTIC_LONGITUDE',
+                                             'ECLIPTIC_LATITUDE', 'OCC_DIAM',
+                                             'IRAS_DIAM', 'IRAS_ALBEDO',
+                                             'POLAR_ALBEDO', 'OCC_ALBEDO',
+                                             'FOUR_DEG_MAGFOUR_DEG_ALBEDO',
+                                             'QUAL_MAG', 'QUAL_OCC'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 T...
+                                    transformer=OrdinalEncoder(cols=['OCC_ALB_FLAG'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'OCC_ALB_FLAG',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': B      0
+W      1
+NaN   -1
+dtype: int64}]))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['ASTEROID_NAME',
+                                             'OCCULTATION_TIME'],
+                                    transformer=TargetEncoder(cols=['ASTEROID_NAME',
+                                                                    'OCCULTATION_TIME'],
+                                                              handle_missing='return_nan'))),
+                ('trained_model', Ridge(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fbf87fad3a0>)
+2023-06-14 20:48:05,049:INFO:Checking exceptions
+2023-06-14 20:48:05,049:INFO:Preloading libraries
+2023-06-14 20:48:05,050:INFO:Set up data.
+2023-06-14 20:48:05,064:INFO:Set up index.
+2023-06-14 20:51:45,260:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:30: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  
+
+2023-06-14 20:51:45,288:INFO:Initializing load_model()
+2023-06-14 20:51:45,288:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 20:51:45,296:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 20:51:45,342:INFO:Initializing predict_model()
+2023-06-14 20:51:45,342:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fbf9f75e4c0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['ASTEROID_NUMBER', 'PHASE_ANGLE',
+                                             'ECLIPTIC_LONGITUDE',
+                                             'ECLIPTIC_LATITUDE', 'OCC_DIAM',
+                                             'IRAS_DIAM', 'IRAS_ALBEDO',
+                                             'POLAR_ALBEDO', 'OCC_ALBEDO',
+                                             'FOUR_DEG_MAGFOUR_DEG_ALBEDO',
+                                             'QUAL_MAG', 'QUAL_OCC'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 T...
+                                    transformer=OrdinalEncoder(cols=['OCC_ALB_FLAG'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'OCC_ALB_FLAG',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': B      0
+W      1
+NaN   -1
+dtype: int64}]))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['ASTEROID_NAME',
+                                             'OCCULTATION_TIME'],
+                                    transformer=TargetEncoder(cols=['ASTEROID_NAME',
+                                                                    'OCCULTATION_TIME'],
+                                                              handle_missing='return_nan'))),
+                ('trained_model', Ridge(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fbf890529d0>)
+2023-06-14 20:51:45,342:INFO:Checking exceptions
+2023-06-14 20:51:45,342:INFO:Preloading libraries
+2023-06-14 20:51:45,343:INFO:Set up data.
+2023-06-14 20:51:45,354:INFO:Set up index.
+2023-06-14 21:09:49,059:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:30: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  
+
+2023-06-14 21:09:49,093:INFO:Initializing load_model()
+2023-06-14 21:09:49,093:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 21:09:49,101:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 21:09:49,150:INFO:Initializing predict_model()
+2023-06-14 21:09:49,150:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fbf9f75e4c0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['ASTEROID_NUMBER', 'PHASE_ANGLE',
+                                             'ECLIPTIC_LONGITUDE',
+                                             'ECLIPTIC_LATITUDE', 'OCC_DIAM',
+                                             'IRAS_DIAM', 'IRAS_ALBEDO',
+                                             'POLAR_ALBEDO', 'OCC_ALBEDO',
+                                             'FOUR_DEG_MAGFOUR_DEG_ALBEDO',
+                                             'QUAL_MAG', 'QUAL_OCC'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 T...
+                                    transformer=OrdinalEncoder(cols=['OCC_ALB_FLAG'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'OCC_ALB_FLAG',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': B      0
+W      1
+NaN   -1
+dtype: int64}]))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['ASTEROID_NAME',
+                                             'OCCULTATION_TIME'],
+                                    transformer=TargetEncoder(cols=['ASTEROID_NAME',
+                                                                    'OCCULTATION_TIME'],
+                                                              handle_missing='return_nan'))),
+                ('trained_model', Ridge(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fbf88002af0>)
+2023-06-14 21:09:49,151:INFO:Checking exceptions
+2023-06-14 21:09:49,151:INFO:Preloading libraries
+2023-06-14 21:09:49,152:INFO:Set up data.
+2023-06-14 21:09:49,163:INFO:Set up index.
+2023-06-14 21:20:26,831:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:30: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  
+
+2023-06-14 21:20:26,862:INFO:Initializing load_model()
+2023-06-14 21:20:26,862:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 21:20:26,871:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 21:20:26,930:INFO:Initializing predict_model()
+2023-06-14 21:20:26,930:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fbf9f75e4c0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['ASTEROID_NUMBER', 'PHASE_ANGLE',
+                                             'ECLIPTIC_LONGITUDE',
+                                             'ECLIPTIC_LATITUDE', 'OCC_DIAM',
+                                             'IRAS_DIAM', 'IRAS_ALBEDO',
+                                             'POLAR_ALBEDO', 'OCC_ALBEDO',
+                                             'FOUR_DEG_MAGFOUR_DEG_ALBEDO',
+                                             'QUAL_MAG', 'QUAL_OCC'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 T...
+                                    transformer=OrdinalEncoder(cols=['OCC_ALB_FLAG'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'OCC_ALB_FLAG',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': B      0
+W      1
+NaN   -1
+dtype: int64}]))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['ASTEROID_NAME',
+                                             'OCCULTATION_TIME'],
+                                    transformer=TargetEncoder(cols=['ASTEROID_NAME',
+                                                                    'OCCULTATION_TIME'],
+                                                              handle_missing='return_nan'))),
+                ('trained_model', Ridge(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fbf89052ee0>)
+2023-06-14 21:20:26,930:INFO:Checking exceptions
+2023-06-14 21:20:26,931:INFO:Preloading libraries
+2023-06-14 21:20:26,931:INFO:Set up data.
+2023-06-14 21:20:26,947:INFO:Set up index.
+2023-06-14 21:21:06,121:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:30: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  
+
+2023-06-14 21:21:06,152:INFO:Initializing load_model()
+2023-06-14 21:21:06,152:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 21:21:06,164:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 21:21:06,228:INFO:Initializing predict_model()
+2023-06-14 21:21:06,228:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fbf9f75e4c0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['ASTEROID_NUMBER', 'PHASE_ANGLE',
+                                             'ECLIPTIC_LONGITUDE',
+                                             'ECLIPTIC_LATITUDE', 'OCC_DIAM',
+                                             'IRAS_DIAM', 'IRAS_ALBEDO',
+                                             'POLAR_ALBEDO', 'OCC_ALBEDO',
+                                             'FOUR_DEG_MAGFOUR_DEG_ALBEDO',
+                                             'QUAL_MAG', 'QUAL_OCC'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 T...
+                                    transformer=OrdinalEncoder(cols=['OCC_ALB_FLAG'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'OCC_ALB_FLAG',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': B      0
+W      1
+NaN   -1
+dtype: int64}]))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['ASTEROID_NAME',
+                                             'OCCULTATION_TIME'],
+                                    transformer=TargetEncoder(cols=['ASTEROID_NAME',
+                                                                    'OCCULTATION_TIME'],
+                                                              handle_missing='return_nan'))),
+                ('trained_model', Ridge(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fbf890e54c0>)
+2023-06-14 21:21:06,228:INFO:Checking exceptions
+2023-06-14 21:21:06,228:INFO:Preloading libraries
+2023-06-14 21:21:06,229:INFO:Set up data.
+2023-06-14 21:21:06,243:INFO:Set up index.
+2023-06-14 21:24:25,451:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:30: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  
+
+2023-06-14 21:24:25,481:INFO:Initializing load_model()
+2023-06-14 21:24:25,481:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 21:24:25,491:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 21:24:25,550:INFO:Initializing predict_model()
+2023-06-14 21:24:25,550:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fbf9f75e4c0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['ASTEROID_NUMBER', 'PHASE_ANGLE',
+                                             'ECLIPTIC_LONGITUDE',
+                                             'ECLIPTIC_LATITUDE', 'OCC_DIAM',
+                                             'IRAS_DIAM', 'IRAS_ALBEDO',
+                                             'POLAR_ALBEDO', 'OCC_ALBEDO',
+                                             'FOUR_DEG_MAGFOUR_DEG_ALBEDO',
+                                             'QUAL_MAG', 'QUAL_OCC'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 T...
+                                    transformer=OrdinalEncoder(cols=['OCC_ALB_FLAG'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'OCC_ALB_FLAG',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': B      0
+W      1
+NaN   -1
+dtype: int64}]))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['ASTEROID_NAME',
+                                             'OCCULTATION_TIME'],
+                                    transformer=TargetEncoder(cols=['ASTEROID_NAME',
+                                                                    'OCCULTATION_TIME'],
+                                                              handle_missing='return_nan'))),
+                ('trained_model', Ridge(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fbfa098da60>)
+2023-06-14 21:24:25,550:INFO:Checking exceptions
+2023-06-14 21:24:25,550:INFO:Preloading libraries
+2023-06-14 21:24:25,551:INFO:Set up data.
+2023-06-14 21:24:25,565:INFO:Set up index.
+2023-06-14 21:26:42,591:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:30: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  
+
+2023-06-14 21:26:42,625:INFO:Initializing load_model()
+2023-06-14 21:26:42,625:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 21:26:42,633:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 21:26:42,680:INFO:Initializing predict_model()
+2023-06-14 21:26:42,680:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fbf9f75e4c0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['ASTEROID_NUMBER', 'PHASE_ANGLE',
+                                             'ECLIPTIC_LONGITUDE',
+                                             'ECLIPTIC_LATITUDE', 'OCC_DIAM',
+                                             'IRAS_DIAM', 'IRAS_ALBEDO',
+                                             'POLAR_ALBEDO', 'OCC_ALBEDO',
+                                             'FOUR_DEG_MAGFOUR_DEG_ALBEDO',
+                                             'QUAL_MAG', 'QUAL_OCC'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 T...
+                                    transformer=OrdinalEncoder(cols=['OCC_ALB_FLAG'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'OCC_ALB_FLAG',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': B      0
+W      1
+NaN   -1
+dtype: int64}]))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['ASTEROID_NAME',
+                                             'OCCULTATION_TIME'],
+                                    transformer=TargetEncoder(cols=['ASTEROID_NAME',
+                                                                    'OCCULTATION_TIME'],
+                                                              handle_missing='return_nan'))),
+                ('trained_model', Ridge(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fbf87684a60>)
+2023-06-14 21:26:42,681:INFO:Checking exceptions
+2023-06-14 21:26:42,681:INFO:Preloading libraries
+2023-06-14 21:26:42,681:INFO:Set up data.
+2023-06-14 21:26:42,691:INFO:Set up index.
+2023-06-14 21:30:51,467:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:30: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  
+
+2023-06-14 21:30:51,495:INFO:Initializing load_model()
+2023-06-14 21:30:51,495:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 21:30:51,502:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 21:30:51,544:INFO:Initializing predict_model()
+2023-06-14 21:30:51,544:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fbf9f75e4c0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['ASTEROID_NUMBER', 'PHASE_ANGLE',
+                                             'ECLIPTIC_LONGITUDE',
+                                             'ECLIPTIC_LATITUDE', 'OCC_DIAM',
+                                             'IRAS_DIAM', 'IRAS_ALBEDO',
+                                             'POLAR_ALBEDO', 'OCC_ALBEDO',
+                                             'FOUR_DEG_MAGFOUR_DEG_ALBEDO',
+                                             'QUAL_MAG', 'QUAL_OCC'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 T...
+                                    transformer=OrdinalEncoder(cols=['OCC_ALB_FLAG'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'OCC_ALB_FLAG',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': B      0
+W      1
+NaN   -1
+dtype: int64}]))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['ASTEROID_NAME',
+                                             'OCCULTATION_TIME'],
+                                    transformer=TargetEncoder(cols=['ASTEROID_NAME',
+                                                                    'OCCULTATION_TIME'],
+                                                              handle_missing='return_nan'))),
+                ('trained_model', Ridge(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fbf89052e50>)
+2023-06-14 21:30:51,544:INFO:Checking exceptions
+2023-06-14 21:30:51,545:INFO:Preloading libraries
+2023-06-14 21:30:51,546:INFO:Set up data.
+2023-06-14 21:30:51,561:INFO:Set up index.
+2023-06-14 21:33:06,042:WARNING:/Users/leonardooliveiratiago/Documents/Astronomy/streamlit-example/streamlit_app.py:30: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  
+
+2023-06-14 21:33:06,067:INFO:Initializing load_model()
+2023-06-14 21:33:06,068:INFO:load_model(model_name=test_pipeline, platform=None, authentication=None, verbose=True)
+2023-06-14 21:33:06,075:WARNING:/Users/leonardooliveiratiago/opt/anaconda3/envs/albedo_prediction/lib/python3.9/site-packages/pycaret/internal/pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.8.0', 'pycaret': '3.0.2', 'IPython': '8.14.0', 'ipywidgets': '8.0.6', 'tqdm': '4.65.0', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.57.0', 'requests': '2.31.0', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.15.0', 'kaleido': '0.2.1', 'statsmodels': '0.14.0', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '23.1.2', 'setuptools': '67.7.2', 'pycaret': '3.0.2', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.1', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.0', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.5'}, 'python': {'version': '3.10.12', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-06-14 21:33:06,124:INFO:Initializing predict_model()
+2023-06-14 21:33:06,124:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x7fbf9f75e4c0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['ASTEROID_NUMBER', 'PHASE_ANGLE',
+                                             'ECLIPTIC_LONGITUDE',
+                                             'ECLIPTIC_LATITUDE', 'OCC_DIAM',
+                                             'IRAS_DIAM', 'IRAS_ALBEDO',
+                                             'POLAR_ALBEDO', 'OCC_ALBEDO',
+                                             'FOUR_DEG_MAGFOUR_DEG_ALBEDO',
+                                             'QUAL_MAG', 'QUAL_OCC'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 T...
+                                    transformer=OrdinalEncoder(cols=['OCC_ALB_FLAG'],
+                                                               handle_missing='return_nan',
+                                                               mapping=[{'col': 'OCC_ALB_FLAG',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': B      0
+W      1
+NaN   -1
+dtype: int64}]))),
+                ('rest_encoding',
+                 TransformerWrapper(include=['ASTEROID_NAME',
+                                             'OCCULTATION_TIME'],
+                                    transformer=TargetEncoder(cols=['ASTEROID_NAME',
+                                                                    'OCCULTATION_TIME'],
+                                                              handle_missing='return_nan'))),
+                ('trained_model', Ridge(random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x7fbfa098da60>)
+2023-06-14 21:33:06,124:INFO:Checking exceptions
+2023-06-14 21:33:06,125:INFO:Preloading libraries
+2023-06-14 21:33:06,126:INFO:Set up data.
+2023-06-14 21:33:06,138:INFO:Set up index.
