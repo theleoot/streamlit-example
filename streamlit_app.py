@@ -51,6 +51,8 @@ Ele fornece uma interface de alto nível, permitindo criar, comparar e avaliar r
 diferentes algoritmos de aprendizado de máquina.
 """
 
+st.image("pictures/slide_3.png", caption="Slide 3")
+
 utilized_model_code = """import pycaret
 
 from pycaret.regression import *"""
@@ -94,6 +96,8 @@ st.image("pictures/model_comparison.png", caption="Comparação entre os modelos
 code = """data_setup = setup(dataframe, target="H", session_id=123)
 models_comparison = compare_models()"""
 
+st.image("pictures/slide_4.png", caption="Slide 4")
+
 """
 ## Análise do erro gerado pelo modelo
 
@@ -129,6 +133,8 @@ with st.echo(code_location='below'):
 """
 with st.echo(code_location='below'):
     model = load_model("test_pipeline")
+
+st.image("pictures/slide_5.png", caption="Slide 5")
 
 """
 ## Predizendo os dados de teste
