@@ -108,26 +108,50 @@ st.image("pictures/error.png", caption="Análise dos erros gerados pelo modelo")
 
 """
 ## Selecionando amostra dos dados para teste
+
+Uma amostra de teste de modelo IA refere-se a um subconjunto de dados que é retirado do 
+processo de treinamento e usado exclusivamente para avaliar o desempenho do modelo. Essas 
+amostras de teste representam dados do mundo real que o modelo não viu antes, permitindo-nos
+avaliar o quão bem o modelo generaliza para instâncias novas e não vistas. O desempenho na 
+amostra de teste fornece informações sobre a precisão e eficácia do modelo em cenários do mundo real.
 """
 
-sample_data = dataframe.drop(columns=["H"], axis=1).head()
+with st.echo(code_location='below'):
+    sample_data = dataframe.drop(columns=["H"], axis=1).head()
 
-sample_data = sample_data.assign(ASTEROID_NUMBER=3200)
-sample_data = sample_data.assign(ASTEROID_NAME="sample")
+    sample_data = sample_data.assign(ASTEROID_NUMBER=3200)
+    sample_data = sample_data.assign(ASTEROID_NAME="sample")
 
-st.table(sample_data.head())
+    st.table(sample_data.head())
 
 """
 ## Importando o modelo treinado
 """
-
-model = load_model("test_pipeline")
+with st.echo(code_location='below'):
+    model = load_model("test_pipeline")
 
 """
 ## Predizendo os dados de teste
+
+A previsão do modelo IA refere-se ao processo de usar um modelo treinado
+para fazer previsões ou gerar saídas para dados novos ou não vistos. O modelo
+recebe os dados de entrada e produz uma previsão ou inferência com base nos padrões
+e relacionamentos aprendidos na fase de treinamento. Isso permite que o modelo forneça
+recursos inteligentes e automatizados de tomada de decisão ou previsão.
 """
 
-predictions = predict_model(model, sample_data)
-st.table(predictions.head())
+with st.echo(code_location='below'):
+    predictions = predict_model(model, sample_data)
+    st.table(predictions.head())
+
+"""
+## Teste o modelo...
+"""
+
+custom_data = dataframe.head(1)
+edited_df = st.data_editor(custom_data.loc[:, custom_data.columns != 'H'])
+
+if st.button("Predizer"):
+    st.table(predict_model(model, edited_df))
 
 st.image("pictures/slide_6.png", caption="Slide 6")
