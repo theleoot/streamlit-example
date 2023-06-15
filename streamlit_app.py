@@ -164,9 +164,22 @@ st.image("pictures/slide_6.png", caption="Slide 6")
 """
 ## Referências
 [Stellar occultations by Small Outer Solar System Objects](https://occultations.ct.utfpr.edu.br/)
+
 [Asteroid Albedos from Stellar Occultations](https://sbn.psi.edu/pds-staging/resource/occalb.html?refUrl=https%3A%2F%2Fsbn.psi.edu%2Fpds-staging%2Farchive%2Fasteroids.html&refName=Asteroid&type=Target+Type&typeUrl=https%3A%2F%2Fsbn.psi.edu%2Fpds%2Farchive%2Ftarget-types.html)
+
 [Albedos Dataset](https://sbnarchive.psi.edu/pds3/non_mission/EAR_A_VARGBDET_5_OCCALB_V1_0/data/occalb.tab)
+
 [Dataset Info](https://sbnarchive.psi.edu/pds3/non_mission/EAR_A_VARGBDET_5_OCCALB_V1_0/data/occalb.lbl)
+
 [Asteroid albedos deduced from stellar occultations](https://www.sciencedirect.com/science/article/abs/pii/S001910350600128X)
+
 [PyCaret Classification](https://pycaret.readthedocs.io/en/latest/api/classification.html)
+"""
+
+"""
+**Feito por**
+    
+    Leonardo Oliveira
+    
+    Matheus de Moraes Neves
 """
